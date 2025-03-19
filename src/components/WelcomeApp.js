@@ -10,21 +10,16 @@ class Welcome extends Component {
   onSubscribe = () => {
     this.setState((prevState) => ({ isSubscribed: !prevState.isSubscribed }));
   };
-  getButtonText = () => {
-    const { isSubscribed } = this.state;
-
-    return isSubscribed ? "Subscribe" : "Subscribed";
-  };
+ 
 
   render() {
-    const buttonText = this.getButtonText();
     return (
       <div className="container">
         <h1 className="heading">Welcome</h1>
         <p className="paragraph"> Thank You! Happy Learning </p>
         <div className="btn-container">
           <button className="button" onClick={this.onSubscribe}>
-            {buttonText}
+                {this.state.isSubscribed ? "Subscribed" : "Subscribe"}
           </button>
         </div>
       </div>
