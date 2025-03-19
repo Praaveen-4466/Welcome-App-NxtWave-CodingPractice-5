@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: #f0bb03;
+  font-family: "Bree Serif";
+  margin-top: 150px;
+  font-weight: bold;
+}
+
+.paragraph {
+  color: white;
+  font-weight: bold;
+}
+
+.button {
+  font-family: "Roboto";
+  font-weight: bold;
+  padding: 10px;
+  font-size: 40px;
+  margin-top: 30px;
+  border-radius: 15px;
+}
